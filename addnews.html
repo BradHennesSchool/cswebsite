@@ -25,32 +25,34 @@ Add News
 			</ul>
 		</div>
 		
-		<header id = 'newsheader' class = 'col-m-10 col-l-10'>
+		<header id = 'newsheader' class = 'col-s-12 col-m-10 col-l-10'>
 			Add a new news article
 		</header>
-		<div class = "addcontent col-l-12 col-m-12 col-s-12">
-			<form action = "submit.php" method = "POST"> 
-				<p>
-					First Name: <input type = "text" name = "firstname">&nbsp;&nbsp;
-					Last Name: <input type = "text" name = "lastname">
-				</P>
-				<p>
-					Title of news post <br>
-					<input type = "text" name = "title">
-				</p>
-				<p>
-					<textarea class = 'textbox' name="body" ></textarea>
-				</p>
-				<p>
-					Show from: 
-						<input type = "text" class = "datepicker" name = "start">
-					To: 
-						<input type = "text" class = "datepicker" name = "expire"><br>
-				</p>
-				
-				<input type="submit" value="Submit">
-				
-			</form>
+		<div class = "wrapper center">
+			<div class = "addcontent col-l-10 col-m-10 col-s-12">
+				<form action = "submit.php" method = "POST"> 
+					<p>
+						First Name: <input type = "text" name = "firstname">&nbsp;&nbsp;
+						Last Name: <input type = "text" name = "lastname">
+					</P>
+					<p>
+						Title of news post <br>
+						<input type = "text" name = "title">
+					</p>
+					<p>
+						<textarea class = 'textbox' name="body" ></textarea>
+					</p>
+					<p>
+						Show from: 
+							<input type = "text" class = "datepicker" name = "start">
+						To: 
+							<input type = "text" class = "datepicker" name = "expire"><br>
+					</p>
+					
+					<input type="submit" value="Submit">
+					
+				</form>
+			</div>
 		</div>
 	</main>
 	<footer>

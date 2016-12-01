@@ -25,9 +25,10 @@ cswebsite
 			</ul>
 		</div>
 		
-		<header id = 'newsheader' class = 'col-s-10 col-m-10 col-l-10'>
+		<header id = 'newsheader' class = 'col-s-12 col-m-10 col-l-10'>
 			Add a new news article
 		</header>
+		
 		<div id = "newsposts" class = "col-s-12 col-m-12 col-l-12">
 		
 			<?php 
@@ -43,7 +44,7 @@ cswebsite
 			{
 				
 				?>
-				<div class = 'editcontent col-l-5 col-m-5'>
+				<div class = 'editcontent marginspacing col-s-10 col-l-5 col-m-5'>
 					
 					
 				<form action = "submitchange.php" method = "POST">

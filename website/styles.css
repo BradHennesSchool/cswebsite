@@ -7,7 +7,6 @@ html
     width: 100%;
 }
 
-
 @media only screen and (min-width: 250px) {
     /* For mobile: */
     .col-s-1   {width: 8.33%;}
@@ -28,7 +27,6 @@ html
 		margin-right: 0px;
 		margin-bottom: 5px;
 	}
-	
 }
 
 @media only screen and (min-width: 560px) {
@@ -182,8 +180,6 @@ hr
 	display: inline-block;
 	padding: 5px;
 	color: #F7F7F7;
-	margin-right: 5px;
-	margin-bottom: 5px;
 }
 
 .frontpage
@@ -200,13 +196,15 @@ hr
 
 .addcontent
 {
-	text-align: center;
+	text-align:center;
 	border-radius: 18px;
 	background-color: #2B1657;
 	background-size: cover;
-	background-repeat: no-repeat;
+	display: inline-block;
 	padding: 5px;
 	color: #F7F7F7;
+	margin-right: 0px;
+	margin-bottom: 5px;
 }
 .small
 {
@@ -247,93 +245,94 @@ nav li a:hover:not(.active)
 	background-color: #C3CF68;
     color: white;
 }
-.active {
+.active 
+{
     background-color: #4CAF50;
 }
 
 #newsposts .times 
 {
-display:block;
-margin:15px 0;
-background-color: #2B1657;
-border-radius: 30px;
+	display:block;
+	margin:15px 0;
+	background-color: #2B1657;
+	border-radius: 30px;
 }
 
 .times ul 
 {
-list-style-type: none;
-margin-left:25px;
-border-left:2px solid #ddd;
+	list-style-type: none;
+	margin-left:25px;
+	border-left:2px solid #ddd;
 }
 
 .times ul li 
 {
-width:100%;
-line-height:20px;
-font-weight:normal;
+	width:100%;
+	line-height:20px;
+	font-weight:normal;
 }
 
 .times ul li b 
 {
-width:8px;
-height:8px;
-background:#fff;
-border:2px solid #555;
-margin:5px;
-border-radius:6px;
-overflow:hidden;
-display:inline-block;
-float:left;
+	width:8px;
+	height:8px;
+	background:#fff;
+	border:2px solid #555;
+	margin:5px;
+	border-radius:6px;
+	overflow:hidden;
+	display:inline-block;
+	float:left;
 }
 
 .times ul li span 
 {
-padding-left:7px;
-font-size:12px;
-line-height:20px;
-color:WHITE;
+	padding-left:7px;
+	font-size:12px;
+	line-height:20px;
+	color:WHITE;
 }
 
 .times ul li:hover b 
 {
-border:2px solid #ff6600;
+	border:2px solid #ff6600;
 }
 
 .times ul li:hover span 
 {
-color:#ff6600;
+	color:#ff6600;
 }
 
 .times ul li p 
 {
-padding-left:28px;
-font-size:14px;
-line-height:25px;
+	padding-left:28px;
+	font-size:14px;
+	line-height:25px;
 }
 
- ul.topnav 
- {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
+ul.topnav 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
 }
 
- ul.topnav li 
- {
+ul.topnav li 
+{
 	 float: left;
 }
 
- ul.topnav li a 
- {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
+ul.topnav li a 
+{
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
 }
 
 ul.topnav li a:hover 
@@ -346,42 +345,45 @@ ul.topnav li.icon
 	display: none;
 }
 
-.tooltip {
+.basewindow {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
 }
 
-.tooltip .tooltiptext {
+.basewindow .baseimg {
     visibility: hidden;
-    width: 120px;
+    width: 550px;
     background-color: #555;
     color: #fff;
-    text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 10px 0;
     position: absolute;
-    z-index: 1;
-    bottom: 125%;
+    
     left: 50%;
-    margin-left: -60px;
+    margin-left: -55px;
     opacity: 0;
     transition: opacity 1s;
 }
 
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-   
-}
 
-.tooltip:hover .tooltiptext {
+
+.basewindow:hover .baseimg {
     visibility: visible;
     opacity: 1;
+}
+
+.baseimg img
+{
+	width: 500px;
+	height: 400px;
+}
+
+.times a{
+	color: yellow;
+}
+.times .linetitle
+{
+	font-size: 25px;
+	color:yellow;
 }
 
