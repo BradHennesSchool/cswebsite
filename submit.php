@@ -1,4 +1,6 @@
 <!Doctype html>
+<!-- This is the submit page for addnews. This takes all the information
+that the user entered on addnews.html and creates a new record in the database -->
 <html lang = 'en'>
 <head>
 <title>
@@ -14,7 +16,7 @@ cswebsite
 			Winona State Computer Science Admin
 		</div>
 		<div id="top">
-			<ul class="topnav" id="myTopnav">
+			<ul class="topnav">
 				<li><a href="editnews.php">Edit News Articles</a></li>
 				<li><a class="active" href="addnews.html">Add News Articles</a></li>
 				</li>
@@ -49,7 +51,7 @@ cswebsite
 			
 			//echo $querystring;
 			
-			$db = new PDO("mysql:dbname=cswebsite;host=localhost", "root");
+			$db = new PDO("mysql:dbname=cswebsite;host=localhost", "AdminUser", "WCaG4qK8sEuvP5U4");
 			$rows = $db->query($querystring);
 			
 			?>

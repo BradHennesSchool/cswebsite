@@ -109,6 +109,7 @@ hr
 
 #navlist
 {
+	padding: 0px;
 	float:left;
 }
 
@@ -143,7 +144,7 @@ hr
 	
 }
 
-#images
+#links
 {
 	float:left;
 }
@@ -188,6 +189,7 @@ hr
 	background-color: #2B1657;
 	background-size: cover;
 	display: inline-block;
+	float: right;
 	padding: 5px;
 	text-align: left;
 	color: #F7F7F7;
@@ -340,10 +342,40 @@ ul.topnav li a:hover
 	background-color: #555;
 }
 
-ul.topnav li.icon 
+ul.sidenav 
 {
-	display: none;
+	list-style-type: none;
+	margin-right: 5px;
+	padding: 0;
+	overflow: hidden;
 }
+
+ul.sidenav li 
+{
+	 float: left;
+}
+
+ul.sidenav li a 
+{
+	margin-right: 6px;
+	margin-bottom: 6px;
+	border-radius: 5px 5px 5px 5px;
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: left;
+	padding: 5px 5px;
+	text-decoration: none;
+	background-color: black;
+	transition: 0.3s;
+	font-size: 0.9em;
+}
+
+ul.sidenav li a:hover 
+{
+	background-color: #555;
+}
+
+
 
 .basewindow {
     position: relative;

@@ -1,4 +1,6 @@
 <!Doctype html>
+<!-- This is the submit page that editnews.html directs to after a user edits a page.
+ -->
 <html lang = 'en'>
 <head>
 <title>
@@ -14,7 +16,7 @@ cswebsite
 			Winona State Computer Science Admin
 		</div>
 		<div id="top">
-			<ul class="topnav" id="myTopnav">
+			<ul class="topnav">
 				<li><a class="active" href="editnews.php">Edit News Articles</a></li>
 				<li><a href="addnews.html">Add News Articles</a></li>
 				</li>
@@ -54,14 +56,14 @@ cswebsite
 			
 			//echo $querystring;
 			
+			$db = new PDO("mysql:dbname=cswebsite;host=localhost", "AdminUser", "WCaG4qK8sEuvP5U4");
+			
 			if(isset($_POST["delete"]))
 			{
-				$db = new PDO("mysql:dbname=cswebsite;host=localhost", "root");
 				$rows = $db->query($querystring2);
 			}
 			else
 			{
-				$db = new PDO("mysql:dbname=cswebsite;host=localhost", "root");
 				$rows = $db->query($querystring);
 			}
 			?>

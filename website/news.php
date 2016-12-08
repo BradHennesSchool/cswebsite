@@ -14,41 +14,44 @@ cswebsite
 		Winona State Computer Science
 	</div>
 		<div id="top">
-			<ul class="topnav" id="myTopnav">
+			<ul class="topnav">
 				<li><a href="index.html">Home</a></li>
 				<li><a class="active" href="news.php">News</a></li>
 				<li><a href="timeline.html">Alumni</a></li>
 			</ul>
 		</div>
 		
-		<header id = 'newsheader' class = 'col-s-10 col-m-10 col-l-10'>
+		<header id = 'newsheader' class = 'col-s-12 col-m-10 col-l-10'>
 			News Page
 		</header>
 
 		<div class = "wrapper">
 			
-			<div id = "images" class = "absolute col-m-1 col-m-1 col-l-1">
-				<img src="pictures/logo.jpg" alt="Winona State Logo" width = "100%">
+			<div id = 'links' class = "col-s-12 col-m-1 col-l-1">
+				<h3>More Info:</h3>
+				<ul class="sidenav">
+				<li><a href="http://www.winona.edu" target = "_blank">WSU Home</a></li>
+				<li><a href="http://cs.winona.edu/faculty.php" target = "_blank">Faculty</a></li>
+			</ul>
+				
 			</div>
 			
 			
-			<div id = "newsposts" class = "col-m-11 col-m-11 col-l-11">
+			<div id = "newsposts" class = "col-s-12 col-m-11 col-l-11">
 			
 				<?php 
 				$currentDate = date("Y/m/d");
 				$querystring = "SELECT * FROM `NewsPosts` where DateStart <= '".$currentDate."' and DateExpired >= '".$currentDate."' order by DateExpired desc;";
 				
-				$db = new PDO("mysql:dbname=cswebsite; host=localhost", "root");
+				$db = new PDO("mysql:dbname=cswebsite;host=localhost", "AdminUser", "WCaG4qK8sEuvP5U4");
 				$rows = $db->query($querystring);
-				//echo $currentDate;
-				//echo $querystring;
 				
 				foreach ($rows as $row) 
 				{
 					if(strlen($row["Body"]) > 250){
-					?><div class = 'content marginspacing col-s-10 col-l-10 col-m-10'><?php	
+					?><div class = 'content marginspacing col-s-12 col-l-10 col-m-10'><?php	
 					}else{
-					?><div class = 'content marginspacing col-s-10 col-l-5 col-m-5'><?php
+					?><div class = 'content marginspacing col-s-12 col-l-5 col-m-5'><?php
 					}?>
 						<h2><?= $row["Title"]?></h2>
 						<P>

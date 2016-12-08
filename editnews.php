@@ -1,4 +1,7 @@
 <!Doctype html>
+<!-- This page creates a form for each news post in the database
+and populates the default values for those forms with information form
+the database -->
 <html lang = 'en'>
 <head>
 <title>
@@ -35,7 +38,7 @@ cswebsite
 			$currentDate = date("Y/m/d");
 			$querystring = "SELECT * FROM `NewsPosts` order by DateExpired desc;";
 			
-			$db = new PDO("mysql:dbname=cswebsite; host=localhost", "root");
+			$db = new PDO("mysql:dbname=cswebsite;host=localhost", "AdminUser", "WCaG4qK8sEuvP5U4");
 			$rows = $db->query($querystring);
 			//echo $currentDate;
 			//echo $querystring;
